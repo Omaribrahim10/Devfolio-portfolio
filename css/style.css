@@ -1,0 +1,593 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* --main-color: #0078ff; */
+  --secondary-color: #f5f5f5;
+}
+body {
+  background-color: #f5f5f5;
+}
+/* font-family: 'Roboto', sans-serif; */
+#navbar a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-item a{
+  margin: 0 5px;
+  transition-duration: 0.7s;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  bottom: 0;
+  left: 10%;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+.nav-item a:hover::after {
+width: 80%;
+}
+
+.dropdown-toggle::after{
+  border: 0;
+}
+
+
+#home {
+  background-image: url(./../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home .layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#home h1 {
+  color: white;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+#movingword {
+  color: white;
+  font-size: 40px;
+}
+
+#home p::after {
+  content: "|";
+  animation: typing 16s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  1% {
+    content: " F|";
+  }
+  2% {
+    content: " Fr|";
+  }
+  3% {
+    content: " Fre|";
+  }
+  4% {
+    content: " Free|";
+  }
+  5% {
+    content: " Freel|";
+  }
+  6% {
+    content: " Freela|";
+  }
+  7% {
+    content: " Freelan|";
+  }
+  8% {
+    content: " Freelanc|";
+  }
+  9% {
+    content: " Freelance|";
+  }
+  10% {
+    content: " Freelancer|";
+  }
+  11% {
+    content: " Freelance|";
+  }
+  12% {
+    content: " Freelanc|";
+  }
+  13% {
+    content: " Freelan|";
+  }
+  14% {
+    content: " Freela|";
+  }
+  15% {
+    content: " Freel|";
+  }
+  16% {
+    content: " Free|";
+  }
+  17% {
+    content: " Fre|";
+  }
+  18% {
+    content: " Fr|";
+  }
+  18% {
+    content: " F|";
+  }
+  20% {
+    content: "|";
+  }
+  21% {
+    content: " |";
+  }
+  22% {
+    content: " De|";
+  }
+  23% {
+    content: " Des|";
+  }
+  24% {
+    content: " Desi|";
+  }
+  25% {
+    content: " Desig|";
+  }
+  26% {
+    content: " Design|";
+  }
+  27% {
+    content: " Designe|";
+  }
+  28% {
+    content: " Designer|";
+  }
+  29% {
+    content: " Designe|";
+  }
+  30% {
+    content: " Design|";
+  }
+  31% {
+    content: " Desig|";
+  }
+  32% {
+    content: " Desi|";
+  }
+  33% {
+    content: " Des|";
+  }
+  34% {
+    content: " De|";
+  }
+  35% {
+    content: " D|";
+  }
+  36% {
+    content: "|";
+  }
+  37% {
+    content: " D|";
+  }
+  38% {
+    content: " De|";
+  }
+  39% {
+    content: " Dev|";
+  }
+  40% {
+    content: " Deve|";
+  }
+  41% {
+    content: " Devel|";
+  }
+  42% {
+    content: " Develo|";
+  }
+  43% {
+    content: " Develop|";
+  }
+  44% {
+    content: " Develope|";
+  }
+  45% {
+    content: " Developer|";
+  }
+  46% {
+    content: " Develope|";
+  }
+  47% {
+    content: " Develop|";
+  }
+  48% {
+    content: " Develo|";
+  }
+  49% {
+    content: " Devel|";
+  }
+  50% {
+    content: " Deve|";
+  }
+  51% {
+    content: " Dev|";
+  }
+  52% {
+    content: " De|";
+  }
+  53% {
+    content: " D|";
+  }
+  54% {
+    content: "|";
+  }
+  55% {
+    content: " P|";
+  }
+  56% {
+    content: " Ph|";
+  }
+  57% {
+    content: " Pho|";
+  }
+  58% {
+    content: " Phot|";
+  }
+  59% {
+    content: " Photo|";
+  }
+  60% {
+    content: " Photog|";
+  }
+  61% {
+    content: " Photogr|";
+  }
+  62% {
+    content: " Photogra|";
+  }
+  63% {
+    content: " Photograp|";
+  }
+  64% {
+    content: " Photograph|";
+  }
+  65% {
+    content: " Photographe|";
+  }
+  66% {
+    content: " Photographer|";
+  }
+  67% {
+    content: " Photographe|";
+  }
+  68% {
+    content: " Photograph|";
+  }
+  69% {
+    content: " Photograp|";
+  }
+  70% {
+    content: " Photogra|";
+  }
+  71% {
+    content: " Photogr|";
+  }
+  72% {
+    content: " Photog|";
+  }
+  73% {
+    content: " Photo|";
+  }
+  74% {
+    content: " Phot|";
+  }
+  75% {
+    content: " Pho|";
+  }
+  76% {
+    content: " Ph|";
+  }
+  77% {
+    content: " |";
+  }
+  78% {
+    content: " F|";
+  }
+  79% {
+    content: " Fr|";
+  }
+  80% {
+    content: " Fre|";
+  }
+  81% {
+    content: " Free|";
+  }
+  82% {
+    content: " Freel|";
+  }
+  83% {
+    content: " Freela|";
+  }
+  84% {
+    content: " Freelan|";
+  }
+  85% {
+    content: " Freelanc|";
+  }
+  86% {
+    content: " Freelance|";
+  }
+  87% {
+    content: " Freelancer|";
+  }
+  88% {
+    content: " Freelance|";
+  }
+  89% {
+    content: " Freelanc|";
+  }
+  90% {
+    content: " Freelan|";
+  }
+  91% {
+    content: " Freela|";
+  }
+  92% {
+    content: " Freel|";
+  }
+  93% {
+    content: " Free|";
+  }
+  94% {
+    content: " Fre|";
+  }
+  95% {
+    content: " Fr|";
+  }
+  96% {
+    content: " F|";
+  }
+  97% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+#progress p {
+  margin: 10px 0;
+}
+#about {
+  position: relative;
+}
+#about h5 {
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+}
+#about h5::after {
+  content: "";
+  background-color: var(--main-color);
+  height: 3px;
+  width: 110px;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+}
+.services{
+  margin: 80px 0;
+}
+
+.services-text {
+  position: relative;
+}
+
+.services-text p::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.numbers {
+  background-image: url(./../images/counters-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  /* height: 400px; */
+  color: white;
+  font-size: 20px;
+  /* margin: 500px 0; */
+}
+.number-icon {
+  width: 70px;
+  height: 70px;
+}
+.numbers-layer {
+  background-color: rgba(0, 119, 255, 0.3);
+}
+
+.portfolio-text {
+  position: relative;
+}
+
+.portfolio-text p::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-icon {
+  height: 40px;
+  width: 40px;
+  color: #0078ff;
+  border: #0078ff 5px solid;
+  border-radius: 50px;
+}
+
+#span-clr {
+  color: #0078ff;
+}
+
+.portfolio i {
+  font-size: 24px;
+}
+
+.portfolio .card-img {
+  overflow: hidden;
+}
+
+.portfolio .card img {
+  transition-duration: 1s;
+}
+
+.portfolio .card:hover img {
+  transform: scale(1.3);
+}
+
+
+
+.slider{
+  background-image: url(./../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slider-layer{
+  background-color: rgba(0, 119, 255, 0.7);
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+.blog-text p{
+  position: relative;
+}
+
+.blog-text p::after{
+  content: '';
+  height: 5px;
+  width: 50px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-footer {
+background-color: #f5f5f5;
+}
+
+.card-footer img{
+width: 20%;
+border-radius: 100%;
+}
+
+.card-bottom a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact{
+  background-image: url(./../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-layer{
+  background-color: rgba(0, 119, 255, 0.7);
+}
+
+.contact input{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+#message{
+  border: 1px solid #dee2e6;
+}
+
+.contact h2{
+  position: relative;
+}
+.contact h2::after{
+  content: '';
+  position: absolute;
+background-color: #0078ff;
+bottom: -20%;
+left: 0;
+width: 100px;
+height: 3px;
+}
+
+.social-media-icons a {
+text-decoration: none;
+color: black;
+}
+.social-media-icons a:hover i {
+background-color: #0078ff;
+border: white solid 4px;
+color: white;
+}
+
+.social-media-icons i {
+font-size: 20px;
+width: 50px;
+height: 50px;
+border-radius: 100%;
+border: #0078ff solid 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+transition: all 0.5s ease-in-out;
+}
+.copyright{
+  background-color: #0062D3;
+  margin: 0;
+  padding: 0;
+}
